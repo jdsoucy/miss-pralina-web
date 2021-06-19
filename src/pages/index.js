@@ -1,136 +1,110 @@
 import * as React from "react"
+import './styles.scss'
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// data
-const links = [
+const items = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
+    category: "freestyle",
+    title: "FREESTYLE I N1 WEB",
+    img: "FREESTYLE_I_N1_WEB.jpg",
   },
   {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
+    category: "freestyle",
+    title: "FREESTYLE I N2 WEB",
+    img: "FREESTYLE_I_N2_WEB.jpg",
   },
   {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
+    category: "freestyle",
+    title: "FREESTYLE I N3 WEB",
+    img: "FREESTYLE_I_N3_WEB.jpg",
   },
   {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
+    category: "freestyle",
+    title: "FREESTYLE II N1 P1 5",
+    img: "FREESTYLE_II_N1_P1_5.jpg",
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
+    category: "freestyle",
+    title: "FREESTYLE II N2 P1 5",
+    img: "FREESTYLE_II_N2_P1_5.jpg",
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
+    category: "freestyle",
+    title: "FREESTYLE III N1 P1 5",
+    img: "FREESTYLE_III_N1_P1_5.jpg",
+  },
+  {
+    category: "freestyle",
+    title: "FREESTYLE III N2 P1 5",
+    img: "FREESTYLE_III_N2_P1_5.jpg",
+  },
+  {
+    category: "freestyle",
+    title: "FREESTYLE III N3 P1 5",
+    img: "FREESTYLE_III_N3_P1_5.jpg",
+  },
+  {
+    category: "freestyle",
+    title: "FREESTYLE III N4 P1 5",
+    img: "FREESTYLE_III_N4_P1_5.jpg",
+  },
+  {
+    category: "blackhairsmatter",
+    title: "BLACKHAIRSMATTER N1 ALIMATOU web",
+    img: "BLACKHAIRSMATTER_N1_ALIMATOU_web.png",
+  },
+  {
+    category: "blackhairsmatter",
+    title: "BLACKHAIRSMATTER N2 KOUMBA web",
+    img: "BLACKHAIRSMATTER_N2_KOUMBA_web.png",
+  },
+  {
+    category: "blackhairsmatter",
+    title: "BLACKHAIRSMATTER N3 LIKA web",
+    img: "BLACKHAIRSMATTER_N3_LIKA_web.png",
+  },
+  {
+    category: "blackhairsmatter",
+    title: "BLACKHAIRSMATTER N4 AMINATA web",
+    img: "BLACKHAIRSMATTER_N4_AMINATA_web.png",
+  },
+  {
+    category: "blackhairsmatter",
+    title: "BLACKHAIRSMATTER N5 FATOU web",
+    img: "BLACKHAIRSMATTER_N5_FATOU_web.png",
+  },
+  {
+    category: "blackhairsmatter",
+    title: "BLACKHAIRSMATTER N6 ASSIA web",
+    img: "BLACKHAIRSMATTER_N6_ASSIA_web.png",
   },
 ]
 
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      Coming soon! Under construction!
-    </main>
+    <div className="container">
+      <section className="hero">
+        <h1>Miss Pralina</h1>
+        <p>Originally from West Africa, Miss Pralina was born in Brussels but has been living in Montreal for over a decade. She is a contemporary artist who is influenced by illustration, design, graffiti, contemporary African and European art. Her use of geometric shapes, bright colours, and symbols represent her vision of our modern society.
+        </p>
+      </section>
+      
+      <section className="artworks">
+        {items.map((item) => (
+          <article>
+            <img className="thumb" src={`${item.img}`} />
+            <div className="title">{item.title}</div>
+          </article>
+        ))}
+      </section>
+
+      <h3>How do I get a Miss Pralina?</h3>
+      <ul>
+        <li>Click on the artwork that you want</li>
+        <li>Click the buy button</li>
+        <li>You will be redirected to Binance NFT website where you can buy, bid and and sell Miss Pralina NFTs</li>
+      </ul>
+    </div>
   )
 }
 
