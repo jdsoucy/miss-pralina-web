@@ -1,0 +1,19 @@
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  button{
+    border: 0;
+    background: transparent;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.1);
+}
+.dark-theme{
+  .top-nav{
+    background: rgba(0,0,0,0.6);
+  }
+}
