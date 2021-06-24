@@ -2,13 +2,14 @@
   padding-bottom: 2rem;
   width: 100%;
   height: 100%;
-  background:white;
-  background-size: cover;
+  background-color:#872c6b;
   background-image: url('../../../static/MP-Freestyle-II-web.png');
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   &.small{
     height: 400px;
   }
@@ -20,5 +21,11 @@
     border: 0;
     font-size: 1.5rem;
     position: relative;
+  }
+}
+
+@media (min-width: 700px){
+  #hero{
+    background-size: cover;
   }
 }
