@@ -130,10 +130,11 @@ const Home = () => {
     <Layout className="home">
       <Hero />
       <section className="container">
-        <h1>Miss Pralina</h1>
-        <p>Originally from West Africa, Miss Pralina was born in Brussels but has been living in Montreal for over a decade. She is a contemporary artist who is influenced by illustration, design, graffiti, contemporary African and European art. Her use of geometric shapes, bright colours, and symbols represent her vision of our modern society.
-        </p>
-        <h2>Artworks</h2>
+        <div className="intro">
+          <h1>Miss Pralina</h1>
+          <p>Originally from West Africa, Miss Pralina was born in Brussels but has been living in Montreal for over a decade. She is a contemporary artist who is influenced by illustration, design, graffiti, contemporary African and European art. Her use of geometric shapes, bright colours, and symbols represent her vision of our modern society.</p>
+        </div>
+        {/* <h2>Artworks</h2>
         {Object.keys(categories).map((key) => (
           <section>
             <h3>{categories[key].title}</h3>
@@ -158,7 +159,8 @@ const Home = () => {
         <li>Click on the artwork that you want</li>
         <li>Click the buy button</li>
         <li>You will be redirected to Binance NFT website where you can buy, bid and and sell Miss Pralina NFTs</li>
-      </ul>
+      </ul> */}
+      </section>
     </Layout>
   )
 }

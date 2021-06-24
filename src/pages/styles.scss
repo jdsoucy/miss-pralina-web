@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 html, body{
   padding: 0;
   margin: 0;
@@ -7,7 +6,7 @@ html, body{
   height: 100%;
 }
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   background: white;
   color:black;
 }
@@ -60,15 +59,13 @@ button{
 }
 #___gatsby,
 #gatsby-focus-wrapper,
-.layout,
-.container{
+.layout{
   height: 100%;
 }
 .container{
   max-width: 1170px;
-  padding: 0 50px;
+  padding: 100px 50px;
   margin: 0 auto;
-  padding-top: 6rem;
 }
 
 .thumb{
@@ -95,6 +92,7 @@ article{
 }
 
 #layout{
+  height: 100%;
   padding-bottom: 100px;
 }
 
@@ -123,5 +121,11 @@ article{
   }
   img{
     width: 100%;
+  }
+}
+.intro{
+  text-align: center;
+  p{
+    margin: 0 auto;
   }
 }

@@ -11,8 +11,8 @@ const TopNav = () => {
         </a>
       </div>
       <ul className="right">
-        <li><Link to="/artwork">Artwork</Link></li>
-        <li><Link to="/about">About</Link></li>
+        {/* <li><Link to="/artwork">Artwork</Link></li>
+        <li><Link to="/about">About</Link></li> */}
       </ul>
     </div>
   )
