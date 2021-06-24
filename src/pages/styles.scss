@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 html, body{
   padding: 0;
   margin: 0;
@@ -57,20 +58,24 @@ a{
 button{
   cursor: pointer;
 }
-
+#___gatsby,
+#gatsby-focus-wrapper,
+.layout,
+.container{
+  height: 100%;
+}
 .container{
   max-width: 1170px;
   padding: 0 50px;
   margin: 0 auto;
   padding-top: 6rem;
 }
-.hero{
-  padding-bottom: 2rem;
-}
+
 .thumb{
   width: 200px;
   height: 200px;
 }
+
 .artworks{
   display: flex;
   width: 100%;
@@ -86,5 +91,37 @@ article{
   .title{
     font-weight: bold;
     font-size: 16px;
+  }
+}
+
+#layout{
+  padding-bottom: 100px;
+}
+
+.about{
+  h1{font-size: 20px;font-weight: normal;}
+  p{
+    font-size: 50px;
+    line-height: auto;
+    line-height: 60px;
+  }
+}
+
+.artwork{
+  h1{border-bottom: 1px solid black;text-align: center;}
+  .top-nav a{
+    color:black;
+  }
+  .artworks{
+    display: flex;
+    flex-direction: row;
+  }
+  article{width: 30%;
+  div{text-align:center;
+  padding: 10px;
+}
+  }
+  img{
+    width: 100%;
   }
 }

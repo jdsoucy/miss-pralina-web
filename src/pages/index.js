@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { Router } from "@reach/router"
 import Layout from './components/layout';
+import Hero from './components/hero';
 import './styles.scss'
 
 const categories = {
@@ -126,13 +127,12 @@ const items = [
 
 const Home = () => {
   return (
-    <Layout>
-      <section className="hero">
+    <Layout className="home">
+      <Hero />
+      <section className="container">
         <h1>Miss Pralina</h1>
         <p>Originally from West Africa, Miss Pralina was born in Brussels but has been living in Montreal for over a decade. She is a contemporary artist who is influenced by illustration, design, graffiti, contemporary African and European art. Her use of geometric shapes, bright colours, and symbols represent her vision of our modern society.
         </p>
-      </section>
-      <section>
         <h2>Artworks</h2>
         {Object.keys(categories).map((key) => (
           <section>
